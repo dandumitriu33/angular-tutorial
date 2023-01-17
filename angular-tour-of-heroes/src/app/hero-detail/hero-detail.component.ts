@@ -17,6 +17,10 @@ export class HeroDetailComponent {
     private location: Location
   ) {}
 
+  goBack(): void {
+    this.location.back();
+  }
+
   ngOnInit(): void {
     this.getHero();
   }
